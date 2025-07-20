@@ -1,0 +1,48 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+#chat-box {
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #666 #222;
+  transition: all 0.3s ease-in-out;
+}
+
+.message {
+  padding: 12px 16px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.user-msg {
+  background-color: #1f2937;
+  align-self: flex-start;
+  color: #f0f0f0;
+  border-left: 3px solid #4dabf7;
+}
+
+.ai-msg {
+  background-color: #2c2f33;
+  align-self: flex-end;
+  color: #e2e2e2;
+  border-right: 3px solid #f59f00;
+  text-align: right;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(77, 171, 247, 0.25);
+}
