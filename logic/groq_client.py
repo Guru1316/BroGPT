@@ -12,7 +12,7 @@ def ask_groq(message):
         "Content-Type": "application/json"
     }
     data = {
-        "model": "llama3-70b-8192",  # You can also try llama3-8b-8192
+        "model": "llama-3.1-8b-instant",  # You can also try llama3-8b-8192
         "messages": [{"role": "user", "content": message}],
         "temperature": 0.7
     }
